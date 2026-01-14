@@ -1,29 +1,29 @@
 GENERATED NARRATIVES
 [majestic]
-1. Through the mist of the copse, the glorious pond appeared.
-2. Through the mist of the grove, the noble bluff appeared.
-3. Beyond the tor lay the radiant waterfall, a sight to behold.
-4. From the depths of the shimmering summit echoed whispers of the shimmering grove.
-5. Beyond the glorious field lay the summit, a sight to behold.
+1. The path from the copse to the sacred plain was stalked by a magnificent pegasus.
+2. In the shadow of the ravine rested the splendid marsh, feared for its phoenix.
+3. After crossing the meadow, they discovered the crag, ruled by a splendid unicorn.
+4. Beyond the field lay the majestic crag, watched by a solitary phoenix.
+5. The copse gave way to the splendid lands where the griffin roamed near the tor.
 
 [harsh]
-1. The path from the dark plain to the iron marsh was perilous.
-2. Hidden past the grim grove was the legendary cruel stream.
-3. Emerging from the bleak brook, travelers were struck by the woodland.
-4. Hidden past the bleak plain was the legendary barren valley.
-5. Through the mist of the ravine, the heath appeared.
+1. From the depths of the desolate field echoed the cries of a grim scorpion haunting the barren woodland.
+2. After crossing the forsaken spring, they discovered the dark jungle, ruled by a dangerous vulture.
+3. Beyond the grim marsh lay the grim woodland, watched by a solitary viper.
+4. From the depths of the desolate summit echoed the cries of a hostile vulture haunting the woodland.
+5. Hidden past the meadow was the menacing domain of a legendary hyena beside the bleak ridge.
 
 [generic]
-1. Beyond the calm spring lay the quiet orchard, a sight to behold.
-2. Emerging from the green bluff, travelers were struck by the orchard.
-3. In the shadow of the woodland rested the ancient heath.
-4. Through the mist of the dry basin, the old waterfall appeared.
-5. Hidden past the summit was the legendary meadow.
+1. Hidden past the woods was the familiar domain of a legendary fish beside the brook.
+2. Hidden past the calm gorge was the uneventful domain of a legendary horse beside the quiet marsh.
+3. After crossing the grove, they discovered the hollow, ruled by a plain horse.
+4. Beyond the open river lay the plain wide orchard, watched by a solitary goat.
+5. In the shadow of the green woods rested the uneventful quiet hollow, feared for its horse.
 
 [doom]
-1. Beyond the ashen plateau lay the gorge, a sight to behold.
-2. From the depths of the steppe echoed whispers of the last pond.
-3. The dying basin gave way to the breathtaking dying plain.
-4. Emerging from the broken hollow, travelers were struck by the tundra.
-5. The path from the void summit to the river was perilous.
+1. The valley gave way to the desolate lands where the lich roamed near the cursed meadow.
+2. The burning jungle gave way to the cursed lands where the reaper roamed near the tor.
+3. From the depths of the plateau echoed the cries of a doomed harbinger haunting the dying stream.
+4. The path from the mountain to the river was stalked by a world-ending behemoth.
+5. The path from the waterfall to the ashen tor was stalked by a ruined voidspawn.
 

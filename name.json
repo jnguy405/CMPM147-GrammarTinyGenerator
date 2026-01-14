@@ -15,16 +15,16 @@
     },
 
     "narrative_patterns": [
-        "Emerging from the [place1], travelers were struck by the [place2].",
-        "Beyond the [place1] lay the [place2], a sight to behold.",
-        "The journey through the [place1] led to the mysterious [place2].",
-        "From the depths of the [place1] echoed whispers of the [place2].",
-        "After crossing the [place1], they discovered the [place2].",
-        "The [place1] gave way to the breathtaking [place2].",
-        "Hidden past the [place1] was the legendary [place2].",
-        "Through the mist of the [place1], the [place2] appeared.",
-        "The path from the [place1] to the [place2] was perilous.",
-        "In the shadow of the [place1] rested the ancient [place2]."
+        "Emerging from the [place1], travelers encountered a [descriptor] [creature] guarding the [place2].",
+        "Beyond the [place1] lay the [descriptor] [place2], watched by a solitary [creature].",
+        "The journey through the [place1] led to the [descriptor] lair of a [creature] near the [place2].",
+        "From the depths of the [place1] echoed the cries of a [descriptor] [creature] haunting the [place2].",
+        "After crossing the [place1], they discovered the [place2], ruled by a [descriptor] [creature].",
+        "The [place1] gave way to the [descriptor] lands where the [creature] roamed near the [place2].",
+        "Hidden past the [place1] was the [descriptor] domain of a legendary [creature] beside the [place2].",
+        "Through the mist of the [place1], a [descriptor] [creature] appeared, blocking the path to the [place2].",
+        "The path from the [place1] to the [place2] was stalked by a [descriptor] [creature].",
+        "In the shadow of the [place1] rested the [descriptor] [place2], feared for its [creature]."
     ],
 
     "creatures": {

@@ -35,16 +35,16 @@ GeneratorData loadData() {
 
     // Narrative patterns
     data.narrativePatterns = {
-        "Emerging from the [place1], travelers were struck by the [place2].",
-        "Beyond the [place1] lay the [place2], a sight to behold.",
-        "The journey through the [place1] led to the mysterious [place2].",
-        "From the depths of the [place1] echoed whispers of the [place2].",
-        "After crossing the [place1], they discovered the [place2].",
-        "The [place1] gave way to the breathtaking [place2].",
-        "Hidden past the [place1] was the legendary [place2].",
-        "Through the mist of the [place1], the [place2] appeared.",
-        "The path from the [place1] to the [place2] was perilous.",
-        "In the shadow of the [place1] rested the ancient [place2]."
+        "Emerging from the [place1], travelers encountered a [descriptor] [creature] guarding the [place2].",
+        "Beyond the [place1] lay the [descriptor] [place2], watched by a solitary [creature].",
+        "The journey through the [place1] led to the [descriptor] lair of a [creature] near the [place2].",
+        "From the depths of the [place1] echoed the cries of a [descriptor] [creature] haunting the [place2].",
+        "After crossing the [place1], they discovered the [place2], ruled by a [descriptor] [creature].",
+        "The [place1] gave way to the [descriptor] lands where the [creature] roamed near the [place2].",
+        "Hidden past the [place1] was the [descriptor] domain of a legendary [creature] beside the [place2].",
+        "Through the mist of the [place1], a [descriptor] [creature] appeared, blocking the path to the [place2].",
+        "The path from the [place1] to the [place2] was stalked by a [descriptor] [creature].",
+        "In the shadow of the [place1] rested the [descriptor] [place2], feared for its [creature]."
     };
 
     // Creatures
@@ -81,6 +81,22 @@ string getToneAdj(const GeneratorData& data, const string& tone) {
     return "";
 }
 
+string getCreature(const GeneratorData& data, const string& tone) {
+    if (tone == "majestic") return getRandom(data.majesticCreatures);
+    if (tone == "harsh") return getRandom(data.harshCreatures);
+    if (tone == "generic") return getRandom(data.genericCreatures);
+    if (tone == "doom") return getRandom(data.doomCreatures);
+    return "";
+}
+
+string getDescriptor(const GeneratorData& data, const string& tone) {
+    if (tone == "majestic") return getRandom(data.majesticDescriptors);
+    if (tone == "harsh") return getRandom(data.harshDescriptors);
+    if (tone == "generic") return getRandom(data.genericDescriptors);
+    if (tone == "doom") return getRandom(data.doomDescriptors);
+    return "";
+}
+
 // Function to create a place name with tone
 string createPlaceName(const GeneratorData& data, const string& placeType, const string& tone) {
     string adjective = getToneAdj(data, tone);
@@ -111,6 +127,8 @@ string createNarrative(const GeneratorData& data, const string& tone) {
     // Create place names
     string place1 = createPlaceName(data, placeType1, tone);
     string place2 = createPlaceName(data, placeType2, tone);
+    string creature = getCreature(data, tone);
+    string descriptor = getDescriptor(data, tone);
 
     // Replace placeholders
     size_t pos;
@@ -123,6 +141,14 @@ string createNarrative(const GeneratorData& data, const string& tone) {
         result.replace(pos, 8, place2);
     }
 
+    while ((pos = result.find("[creature]")) != string::npos) {
+        result.replace(pos, 10, creature);
+    }
+
+    while ((pos = result.find("[descriptor]")) != string::npos) {
+        result.replace(pos, 12, descriptor);
+    }
+    
     return result;
 }
 
