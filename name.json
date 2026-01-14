@@ -1,0 +1,43 @@
+{
+    "places": {
+        "waters": ["lake", "river", "stream", "pond", "waterfall", "spring", "brook", "marsh"],
+        "mountains": ["mountain", "peak", "cliff", "ridge", "summit", "crag", "bluff", "tor"],
+        "forests": ["forest", "woods", "grove", "thicket", "copse", "jungle", "woodland", "orchard"],
+        "valleys": ["valley", "vale", "canyon", "gorge", "ravine", "gully", "hollow", "basin"],
+        "plains": ["plain", "field", "meadow", "prairie", "steppe", "plateau", "heath", "tundra"]
+    },
+
+    "tones": {
+        "majestic": ["golden", "shimmering", "eternal", "sacred", "radiant", "divine", "noble", "glorious"],
+        "harsh": ["dark", "bleak", "grim", "barren", "desolate", "forsaken", "cruel", "iron"],
+        "generic": ["quiet", "wide", "old", "calm", "empty", "green", "dry", "open"],
+        "doom": ["ashen", "burning", "broken", "cursed", "blighted", "dying", "void", "last"]
+    },
+
+    "narrative_patterns": [
+        "Emerging from the [place1], travelers were struck by the [place2].",
+        "Beyond the [place1] lay the [place2], a sight to behold.",
+        "The journey through the [place1] led to the mysterious [place2].",
+        "From the depths of the [place1] echoed whispers of the [place2].",
+        "After crossing the [place1], they discovered the [place2].",
+        "The [place1] gave way to the breathtaking [place2].",
+        "Hidden past the [place1] was the legendary [place2].",
+        "Through the mist of the [place1], the [place2] appeared.",
+        "The path from the [place1] to the [place2] was perilous.",
+        "In the shadow of the [place1] rested the ancient [place2]."
+    ],
+
+    "creatures": {
+        "majestic": ["eagle", "stag", "lion", "phoenix", "unicorn", "dragon", "griffin", "pegasus"],
+        "harsh": ["wolf", "bear", "serpent", "vulture", "scorpion", "viper", "hyena", "crow"],
+        "generic": ["deer", "fish", "horse", "bird", "dog", "cat", "goat", "boar"],
+        "doom": ["lich", "reaper", "leviathan", "behemoth", "harbinger", "wyrm", "abomination", "voidspawn"]
+    },
+
+    "descriptors": {
+        "majestic": ["majestic", "grand", "splendid", "magnificent", "awe-inspiring", "regal", "stately", "imposing"],
+        "harsh": ["forbidding", "dangerous", "treacherous", "hostile", "menacing", "ominous", "bleak", "grim"],
+        "generic": ["ordinary", "plain", "simple", "quiet", "modest", "uneventful", "familiar", "unremarkable"],
+        "doom": ["apocalyptic", "cursed", "ruined", "cataclysmic", "doomed", "desolate", "terminal", "world-ending"]
+    }
+}

@@ -1,0 +1,29 @@
+GENERATED NARRATIVES
+[majestic]
+1. Through the mist of the copse, the glorious pond appeared.
+2. Through the mist of the grove, the noble bluff appeared.
+3. Beyond the tor lay the radiant waterfall, a sight to behold.
+4. From the depths of the shimmering summit echoed whispers of the shimmering grove.
+5. Beyond the glorious field lay the summit, a sight to behold.
+
+[harsh]
+1. The path from the dark plain to the iron marsh was perilous.
+2. Hidden past the grim grove was the legendary cruel stream.
+3. Emerging from the bleak brook, travelers were struck by the woodland.
+4. Hidden past the bleak plain was the legendary barren valley.
+5. Through the mist of the ravine, the heath appeared.
+
+[generic]
+1. Beyond the calm spring lay the quiet orchard, a sight to behold.
+2. Emerging from the green bluff, travelers were struck by the orchard.
+3. In the shadow of the woodland rested the ancient heath.
+4. Through the mist of the dry basin, the old waterfall appeared.
+5. Hidden past the summit was the legendary meadow.
+
+[doom]
+1. Beyond the ashen plateau lay the gorge, a sight to behold.
+2. From the depths of the steppe echoed whispers of the last pond.
+3. The dying basin gave way to the breathtaking dying plain.
+4. Emerging from the broken hollow, travelers were struck by the tundra.
+5. The path from the void summit to the river was perilous.
+
