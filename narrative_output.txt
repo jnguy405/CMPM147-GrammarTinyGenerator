@@ -1,29 +1,44 @@
 GENERATED NARRATIVES
+SINGLE TONE NARRATIVES
 [majestic]
-1. The path from the copse to the sacred plain was stalked by a magnificent pegasus.
-2. In the shadow of the ravine rested the splendid marsh, feared for its phoenix.
-3. After crossing the meadow, they discovered the crag, ruled by a splendid unicorn.
-4. Beyond the field lay the majestic crag, watched by a solitary phoenix.
-5. The copse gave way to the splendid lands where the griffin roamed near the tor.
+1. The copse gave way to the magnificent lands where the griffin roamed near the eternal bluff.
+2. The path from the shimmering peak to the basin was stalked by a imposing lion.
+3. In the shadow of the sacred cliff rested the majestic golden prairie, feared for its lion.
 
 [harsh]
-1. From the depths of the desolate field echoed the cries of a grim scorpion haunting the barren woodland.
-2. After crossing the forsaken spring, they discovered the dark jungle, ruled by a dangerous vulture.
-3. Beyond the grim marsh lay the grim woodland, watched by a solitary viper.
-4. From the depths of the desolate summit echoed the cries of a hostile vulture haunting the woodland.
-5. Hidden past the meadow was the menacing domain of a legendary hyena beside the bleak ridge.
+1. The path from the prairie to the peak was stalked by a dangerous viper.
+2. The journey through the desolate marsh led to the ominous lair of a wolf near the canyon.
+3. From the depths of the pond echoed the cries of a bleak serpent haunting the iron plateau.
 
 [generic]
-1. Hidden past the woods was the familiar domain of a legendary fish beside the brook.
-2. Hidden past the calm gorge was the uneventful domain of a legendary horse beside the quiet marsh.
-3. After crossing the grove, they discovered the hollow, ruled by a plain horse.
-4. Beyond the open river lay the plain wide orchard, watched by a solitary goat.
-5. In the shadow of the green woods rested the uneventful quiet hollow, feared for its horse.
+1. Beyond the empty grove lay the familiar calm tundra, watched by a solitary boar.
+2. Hidden past the forest was the quiet domain of a legendary bird beside the lake.
+3. From the depths of the empty summit echoed the cries of a quiet horse haunting the meadow.
 
 [doom]
-1. The valley gave way to the desolate lands where the lich roamed near the cursed meadow.
-2. The burning jungle gave way to the cursed lands where the reaper roamed near the tor.
-3. From the depths of the plateau echoed the cries of a doomed harbinger haunting the dying stream.
-4. The path from the mountain to the river was stalked by a world-ending behemoth.
-5. The path from the waterfall to the ashen tor was stalked by a ruined voidspawn.
+1. After crossing the dying ravine, they discovered the dying meadow, ruled by a apocalyptic lich.
+2. From the depths of the cursed vale echoed the cries of a doomed behemoth haunting the plateau.
+3. Hidden past the heath was the terminal domain of a legendary abomination beside the blighted woods.
 
+
+TONE BLENDED NARRATIVES
+
+[70% harsh + 30% majestic]
+1. Hidden past the valley was the menacing domain of a legendary bear beside the peak.
+2. The journey through the barren river led to the treacherous lair of a griffin near the cruel crag.
+3. In the shadow of the barren basin rested the majestic forsaken crag, feared for its scorpion.
+
+[25% each: majestic + harsh + generic + doom]
+1. From the depths of the eternal lake echoed the cries of a terminal vulture haunting the iron forest.
+2. Through the mist of the summit, a forbidding harbinger appeared, blocking the path to the desolate field.
+3. Through the mist of the peak, a treacherous wolf appeared, blocking the path to the ashen brook.
+
+[80% doom + 20% generic]
+1. Through the mist of the meadow, a terminal behemoth appeared, blocking the path to the river.
+2. Hidden past the open marsh was the desolate domain of a legendary reaper beside the dying peak.
+3. After crossing the dry lake, they discovered the field, ruled by a cursed goat.
+
+[50% majestic + 30% harsh + 20% doom]
+1. In the shadow of the woods rested the regal canyon, feared for its unicorn.
+2. The meadow gave way to the stately lands where the vulture roamed near the radiant pond.
+3. The path from the noble gully to the thicket was stalked by a regal abomination.

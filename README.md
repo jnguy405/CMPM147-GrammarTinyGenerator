@@ -27,4 +27,4 @@ Example files `narrative_generator` and `narrative_output.txt` are provided. Oth
 ---
 To view the files:
 1. `./narrative_generator` in the terminal after running `make`.
-2. Manually open `narrative_output.txt` after running `make run`.
+2. Manually open `narrative_output.txt`.

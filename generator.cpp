@@ -6,6 +6,8 @@
 #include <cstdlib>
 #include <ctime>
 #include <sstream>
+#include <map>
+#include <algorithm>
 
 using namespace std;
 
@@ -14,6 +16,32 @@ string getRandom(const vector<string>& items) {
     if (items.empty()) return "";
     int index = rand() % items.size();
     return items[index];
+}
+
+// Select based on weighted probabilities
+string selectWeighted(const vector<string>& items, const vector<int>& weights) {
+    if (items.empty()) return "";
+    
+    int totalWeight = 0;
+    for (int w : weights) {
+        totalWeight += w;
+    }
+    
+    if (totalWeight <= 0) {
+        return getRandom(items);
+    }
+    
+    int randomValue = rand() % totalWeight;
+    int cumulative = 0;
+    
+    for (size_t i = 0; i < items.size(); i++) {
+        cumulative += weights[i];
+        if (randomValue < cumulative) {
+            return items[i];
+        }
+    }
+    
+    return items.back();
 }
 
 // Function to load data
@@ -81,6 +109,7 @@ string getToneAdj(const GeneratorData& data, const string& tone) {
     return "";
 }
 
+// Get creature name
 string getCreature(const GeneratorData& data, const string& tone) {
     if (tone == "majestic") return getRandom(data.majesticCreatures);
     if (tone == "harsh") return getRandom(data.harshCreatures);
@@ -89,6 +118,7 @@ string getCreature(const GeneratorData& data, const string& tone) {
     return "";
 }
 
+// Get narrative descriptor
 string getDescriptor(const GeneratorData& data, const string& tone) {
     if (tone == "majestic") return getRandom(data.majesticDescriptors);
     if (tone == "harsh") return getRandom(data.harshDescriptors);
@@ -97,7 +127,146 @@ string getDescriptor(const GeneratorData& data, const string& tone) {
     return "";
 }
 
-// Function to create a place name with tone
+// Get blended tone adjective
+string getBlendedToneAdj(const GeneratorData& data, const ToneBlend& blend) {
+    vector<string> allAdjectives;
+    vector<int> weights;
+    
+    // Collect all adjectives with their weights
+    for (const auto& pair : blend.tones) {
+        const string& tone = pair.first;
+        int weight = pair.second;
+        
+        vector<string> toneAdjectives;
+        if (tone == "majestic") toneAdjectives = data.majesticTones;
+        else if (tone == "harsh") toneAdjectives = data.harshTones;
+        else if (tone == "generic") toneAdjectives = data.genericTones;
+        else if (tone == "doom") toneAdjectives = data.doomTones;
+        
+        // Add each adjective from this tone category
+        for (const string& adj : toneAdjectives) {
+            allAdjectives.push_back(adj);
+            weights.push_back(weight); // gets the tone's weight
+        }
+    }
+    
+    return selectWeighted(allAdjectives, weights);
+}
+
+// Get blended creature
+string getBlendCreature(const GeneratorData& data, const ToneBlend& blend) {
+    vector<string> allCreatures;
+    vector<int> weights;
+    
+    for (const auto& pair : blend.tones) {
+        const string& tone = pair.first;
+        int weight = pair.second;
+        
+        vector<string> toneCreatures;
+        if (tone == "majestic") toneCreatures = data.majesticCreatures;
+        else if (tone == "harsh") toneCreatures = data.harshCreatures;
+        else if (tone == "generic") toneCreatures = data.genericCreatures;
+        else if (tone == "doom") toneCreatures = data.doomCreatures;
+        
+        for (const string& creature : toneCreatures) {
+            allCreatures.push_back(creature);
+            weights.push_back(weight);
+        }
+    }
+    
+    return selectWeighted(allCreatures, weights);
+}
+
+// Get blended descriptor
+string getBlendDescriptor(const GeneratorData& data, const ToneBlend& blend) {
+    vector<string> allDescriptors;
+    vector<int> weights;
+    
+    for (const auto& pair : blend.tones) {
+        const string& tone = pair.first;
+        int weight = pair.second;
+        
+        vector<string> toneDescriptors;
+        if (tone == "majestic") toneDescriptors = data.majesticDescriptors;
+        else if (tone == "harsh") toneDescriptors = data.harshDescriptors;
+        else if (tone == "generic") toneDescriptors = data.genericDescriptors;
+        else if (tone == "doom") toneDescriptors = data.doomDescriptors;
+        
+        for (const string& desc : toneDescriptors) {
+            allDescriptors.push_back(desc);
+            weights.push_back(weight);
+        }
+    }
+    
+    return selectWeighted(allDescriptors, weights);
+}
+
+// Create a place name with blended tones
+string createBlendPlace(const GeneratorData& data, const string& placeType, const ToneBlend& blend) {
+    string adjective = getBlendedToneAdj(data, blend);
+    string place = getPlace(data, placeType);
+
+    // 50% chance to add adjective
+    if (rand() % 2 == 0) {
+        return adjective + " " + place;
+    }
+    return place;
+}
+
+// Create a narrative with blended tones
+string createBlendNarrative(const GeneratorData& data, const ToneBlend& blend) {
+    string pattern = getRandom(data.narrativePatterns);
+    string result = pattern;
+
+    // Choose two different place types
+    vector<string> placeTypes = {"waters", "mountains", "forests", "valleys", "plains"};
+    string placeType1 = getRandom(placeTypes);
+
+    // Make sure placeType2 is different
+    string placeType2;
+    do {
+        placeType2 = getRandom(placeTypes);
+    } while (placeType2 == placeType1);
+
+    // Create place names
+    string place1 = createBlendPlace(data, placeType1, blend);
+    string place2 = createBlendPlace(data, placeType2, blend);
+    string creature = getBlendCreature(data, blend);
+    string descriptor = getBlendDescriptor(data, blend);
+
+    // Replace placeholders
+    size_t pos;
+
+    while ((pos = result.find("[place1]")) != string::npos) {
+        result.replace(pos, 8, place1);
+    }
+
+    while ((pos = result.find("[place2]")) != string::npos) {
+        result.replace(pos, 8, place2);
+    }
+
+    while ((pos = result.find("[creature]")) != string::npos) {
+        result.replace(pos, 10, creature);
+    }
+
+    while ((pos = result.find("[descriptor]")) != string::npos) {
+        result.replace(pos, 12, descriptor);
+    }
+    
+    return result;
+}
+
+// Generate multiple blended narratives
+vector<string> genBlendNarrative(const GeneratorData& data, const ToneBlend& blend, int count) {
+    vector<string> narratives;
+
+    for (int i = 0; i < count; i++) {
+        narratives.push_back(createBlendNarrative(data, blend));
+    }
+    return narratives;
+}
+
+// Create a place name with tone
 string createPlaceName(const GeneratorData& data, const string& placeType, const string& tone) {
     string adjective = getToneAdj(data, tone);
     string place = getPlace(data, placeType);
@@ -109,7 +278,7 @@ string createPlaceName(const GeneratorData& data, const string& placeType, const
     return place;
 }
 
-// Function to create a narrative sentence
+// Create a narrative sentence
 string createNarrative(const GeneratorData& data, const string& tone) {
     string pattern = getRandom(data.narrativePatterns);
     string result = pattern;
@@ -153,7 +322,7 @@ string createNarrative(const GeneratorData& data, const string& tone) {
 }
 
 // Function to generate multiple narratives
-vector<string> generateNarratives(const GeneratorData& data, const string& tone, int count) {
+vector<string> genNarratives(const GeneratorData& data, const string& tone, int count) {
     vector<string> narratives;
 
     for (int i = 0; i < count; i++) {
