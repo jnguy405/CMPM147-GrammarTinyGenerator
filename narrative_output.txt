@@ -1,44 +1,44 @@
 GENERATED NARRATIVES
 SINGLE TONE NARRATIVES
 [majestic]
-1. The copse gave way to the magnificent lands where the griffin roamed near the eternal bluff.
-2. The path from the shimmering peak to the basin was stalked by a imposing lion.
-3. In the shadow of the sacred cliff rested the majestic golden prairie, feared for its lion.
+1. The path from the canyon to the divine plain was stalked by a awe-inspiring lion.
+2. Emerging from the grove, travelers encountered a majestic unicorn guarding the glorious river.
+3. From the depths of the canyon echoed the cries of a stately eagle haunting the shimmering lake.
 
 [harsh]
-1. The path from the prairie to the peak was stalked by a dangerous viper.
-2. The journey through the desolate marsh led to the ominous lair of a wolf near the canyon.
-3. From the depths of the pond echoed the cries of a bleak serpent haunting the iron plateau.
+1. Hidden past the cliff was the forbidding domain of a legendary scorpion beside the hollow.
+2. Beyond the gully lay the dangerous iron marsh, watched by a solitary viper.
+3. Beyond the dark woods lay the grim cruel field, watched by a solitary vulture.
 
 [generic]
-1. Beyond the empty grove lay the familiar calm tundra, watched by a solitary boar.
-2. Hidden past the forest was the quiet domain of a legendary bird beside the lake.
-3. From the depths of the empty summit echoed the cries of a quiet horse haunting the meadow.
+1. Emerging from the quiet prairie, travelers encountered a plain cat guarding the quiet thicket.
+2. After crossing the old prairie, they discovered the calm lake, ruled by a unremarkable horse.
+3. The path from the empty gully to the open copse was stalked by a modest bird.
 
 [doom]
-1. After crossing the dying ravine, they discovered the dying meadow, ruled by a apocalyptic lich.
-2. From the depths of the cursed vale echoed the cries of a doomed behemoth haunting the plateau.
-3. Hidden past the heath was the terminal domain of a legendary abomination beside the blighted woods.
+1. Beyond the burning river lay the world-ending last prairie, watched by a solitary leviathan.
+2. Hidden past the tor was the desolate domain of a legendary lich beside the broken meadow.
+3. In the shadow of the prairie rested the desolate brook, feared for its voidspawn.
 
 
 TONE BLENDED NARRATIVES
 
 [70% harsh + 30% majestic]
-1. Hidden past the valley was the menacing domain of a legendary bear beside the peak.
-2. The journey through the barren river led to the treacherous lair of a griffin near the cruel crag.
-3. In the shadow of the barren basin rested the majestic forsaken crag, feared for its scorpion.
+1. In the shadow of the barren peak rested the treacherous cruel river, feared for its phoenix.
+2. Emerging from the barren basin, travelers encountered a forbidding viper guarding the barren copse.
+3. From the depths of the brook echoed the cries of a menacing crow haunting the desolate gorge.
 
 [25% each: majestic + harsh + generic + doom]
-1. From the depths of the eternal lake echoed the cries of a terminal vulture haunting the iron forest.
-2. Through the mist of the summit, a forbidding harbinger appeared, blocking the path to the desolate field.
-3. Through the mist of the peak, a treacherous wolf appeared, blocking the path to the ashen brook.
+1. Through the mist of the wide summit, a bleak bird appeared, blocking the path to the river.
+2. Emerging from the dry heath, travelers encountered a stately crow guarding the grove.
+3. From the depths of the meadow echoed the cries of a unremarkable voidspawn haunting the green gully.
 
 [80% doom + 20% generic]
-1. Through the mist of the meadow, a terminal behemoth appeared, blocking the path to the river.
-2. Hidden past the open marsh was the desolate domain of a legendary reaper beside the dying peak.
-3. After crossing the dry lake, they discovered the field, ruled by a cursed goat.
+1. Beyond the ravine lay the modest waterfall, watched by a solitary abomination.
+2. From the depths of the last heath echoed the cries of a terminal lich haunting the last grove.
+3. Emerging from the blighted tundra, travelers encountered a cursed lich guarding the dying waterfall.
 
 [50% majestic + 30% harsh + 20% doom]
-1. In the shadow of the woods rested the regal canyon, feared for its unicorn.
-2. The meadow gave way to the stately lands where the vulture roamed near the radiant pond.
-3. The path from the noble gully to the thicket was stalked by a regal abomination.
+1. Through the mist of the grim summit, a imposing pegasus appeared, blocking the path to the divine plateau.
+2. The journey through the ravine led to the terminal lair of a reaper near the brook.
+3. From the depths of the glorious spring echoed the cries of a majestic crow haunting the prairie.

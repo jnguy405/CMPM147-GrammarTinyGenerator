@@ -128,7 +128,7 @@ string getDescriptor(const GeneratorData& data, const string& tone) {
 }
 
 // Get blended tone adjective
-string getBlendedToneAdj(const GeneratorData& data, const ToneBlend& blend) {
+string getBlendToneAdj(const GeneratorData& data, const ToneBlend& blend) {
     vector<string> allAdjectives;
     vector<int> weights;
     
@@ -203,7 +203,7 @@ string getBlendDescriptor(const GeneratorData& data, const ToneBlend& blend) {
 
 // Create a place name with blended tones
 string createBlendPlace(const GeneratorData& data, const string& placeType, const ToneBlend& blend) {
-    string adjective = getBlendedToneAdj(data, blend);
+    string adjective = getBlendToneAdj(data, blend);
     string place = getPlace(data, placeType);
 
     // 50% chance to add adjective
