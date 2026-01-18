@@ -28,3 +28,10 @@ Example files `narrative_generator` and `narrative_output.txt` are provided. Oth
 To view the files:
 1. `./narrative_generator` in the terminal after running `make`.
 2. Manually open `narrative_output.txt`.
+
+---
+
+## Citation
+
+1. CoPilot used to generate list of descriptors.
+2. Thesaurus used to find synonyms for generic nature words.
